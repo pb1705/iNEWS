@@ -1,7 +1,7 @@
 const bodyParser = require('body-parser')
 const express = require('express')
 const app = express()
-
+const fetch = require("node-fetch");
 app.use(bodyParser.urlencoded({extended:true}))
 app.set('view engine', 'ejs');
 app.use(express.static('public'));
